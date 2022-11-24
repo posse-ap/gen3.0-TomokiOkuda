@@ -1,0 +1,152 @@
+
+.header{
+display: flex;
+justify-content:space-between;
+padding: 12px;
+}
+.button{
+border-radius: 30px;
+}
+
+.today{
+  border-radius: 10px; 
+  padding: 40px;
+  display: inline-block;
+  border:1px solid 
+  
+}
+
+.month{
+  border-radius: 10px; 
+  padding: 40px;
+  display: inline-block;
+  border:1px solid 
+}
+.total{
+    border-radius: 10px; 
+    padding: 40px;
+    display: inline-block;
+    border:1px solid 
+  }
+
+  .box{
+    display: flex;
+    justify-content:space-around;
+  }
+  .all{
+    display: flex;
+    justify-content:space-around;
+  }
+  .date2{
+    text-align: center;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .modal-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    background-color: #dfdddd;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 2rem;
+  }
+
+  .modal-content{
+    display: flex;
+  }
+  .loader{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    background-color: #dfdddd;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 2rem;
+  }
+   
+  .pie_chart{
+    
+    width: 300px;
+  }
+  
+  #loading {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+    background-color: #0bd;
+  
+    /* 以下のコードを追加 */
+      position: fixed;
+      z-index:9999;
+    }
+  
+  .spinner {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  /* ローディングアニメーション */
+  @keyframes sk-scaleout {
+    0% {
+      transform: scale(0);
+    } 100% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  .record_message{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    background-color: #dfdddd;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 2rem;
+  }
+  .chart_graph{
+    display: flex;
+  }
+  .title.responsive{
+
+  }
+  .button2{
+    display:none;
+  }
+@media screen and (max-width:480px) {
+  .all{
+    display: block;
+  }
+.record{
+  display:none;
+}
+.button2{
+  display:block;
+  text-align: center;
+}
+}
+
+
